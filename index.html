@@ -1,0 +1,25 @@
+<textarea
+    name=""
+    style="width: 98%; height: 40%; margin: 1em"
+    id="value"
+    placeholder="Value"
+></textarea>
+
+<button type="button" onclick="start()">Start</button>
+
+<textarea
+    name=""
+    style="width: 98%; height: 40%; margin: 1em"
+    id="res"
+    placeholder="Response"
+></textarea>
+
+<script>
+    function start(){
+        document.getElementById('res').value = "";
+        var value = document.getElementById('value').value;
+        document.getElementById('res').value = remakeBracket(value);
+    }
+</script>
+
+<script src="remakeHtmlBracket.js"></script>
